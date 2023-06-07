@@ -9,11 +9,24 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
- 	<title>Nina Carducci - Phtographe</title>
+ 	<title>Nina Carducci - Photographe Bordeaux</title>
 
 	<!-- Meta description -->
-	<meta name="description" content="Nina Carducci - Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.">
+	<meta name="description" content="Nina Carducci - Devenir photographe à Bordeaux était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.">
 
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Nina Carducci - Photographe Bordeaux" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://nina-carducci.github.io/" />
+	<meta property="og:image" content="http://127.0.0.1:5501/assets/images/nina.webp" />
+	<meta property="og:description" content="Nina Carducci - Devenir photographe à Bordeaux était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer." /> 
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Nina Carducci - Photographe Bordeaux">
+	<meta name="twitter:description" content="Nina Carducci - Devenir photographe à Bordeaux était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.">
+	<!-- Twitter Summary card images must be at least 200x200px -->
+	<meta name="twitter:image" content="http://127.0.0.1:5501/assets/images/nina.webp">
 
 	<style>
 		:root {
@@ -1371,9 +1384,9 @@
 	</style>
 
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Photograph">
 <nav class="top-header">
-	<h1 class="name h3">Nina Carducci</h1>
+	<h1 class="name h3" itemprop="creator">Nina Carducci</h1>
 	<div class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
@@ -1415,7 +1428,7 @@
 	</div>
 </header>
 
-<main>
+<main >
 	<section id="about">
 		<div class="picture left">
 			<img  width="560" height="560" src="./assets/images/nina.webp" name="portrait of Nina Carducci" alt="portrait de Nina Carducci">
@@ -1423,8 +1436,8 @@
 		<div id="about-me">
 			<h1 class="about-me__title">A propos de moi</h1>
 			<article>
-				<p class="h6 about-me__introduction titre_aboutme">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+				<p class="h6 about-me__introduction titre_aboutme" itemprop="description">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+				<p itemprop="description">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</article>
 		</div>
@@ -1453,13 +1466,13 @@
 			</figure>
 		</div>
 	</section>
-	<section id="services">
+	<section id="services" itemscope itemtype="https://schema.org/Service">
 		<h1 class="title h2">Mes services</h1>
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
-					<h2>Shooting photo</h2>
-					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+					<h2 itemprop="name">Shooting photo</h2>
+					<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
 					<h3>350€/demi journée</h3>
@@ -1469,8 +1482,8 @@
 			</div>
 			<div class="service">
 				<div class="service__description">
-					<h2>Retouches</h2>
-					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+					<h2 itemprop="name">Retouches</h2>
+					<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
 				<div class="service__price">
 					<h3>50€/photo</h3>
@@ -1479,8 +1492,8 @@
 			</div>
 			<div class="service">
 				<div class="service__description">
-					<h2>Album photos</h2>
-					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+					<h2 itemprop="name">Album photos</h2>
+					<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 				</div>
 				<div class="service__price">
 					<h3>400€ album A4</h3>
