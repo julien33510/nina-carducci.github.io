@@ -28,6 +28,94 @@
 	<!-- Twitter Summary card images must be at least 200x200px -->
 	<meta name="twitter:image" content="http://127.0.0.1:5501/assets/images/nina.webp">
 
+	<!-- Schema.org -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org/",
+		  "@type": "Person",
+		  "name": "Nina Carducci",
+		  "jobTitle": "photographer",
+		  "address":{
+			"@type":"PostalAddress",
+			"streetAddress":"68 Avenue Alsace Lorraine",
+			"postalCode":"33200",
+			"addressLocality":"Bordeaux",
+			"addressCountry":"Fr"
+		  },
+		  "image": "./assets/images/nina.webp",
+		  "url": "https://nina-carducci.github.io/",
+		  "description":"Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.",
+		  "publishingPrinciples":{
+			"@type":"Photograph",
+			"about":"Entreprises",
+			"text":"Wedding Opening",
+			"thumbnailUrl":"./assets/images/slider/edward-cisneros-3_h6-1NPDGw-optimised.webp"
+		  },
+		  "hasOfferCatalog":{
+			"@type": "OfferCatalog",
+			"itemListElement": [
+				{
+					"@type":"Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Shooting photo",
+						"description":"Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos"
+					  },
+					  "priceSpecification": {
+						"@type": "UnitPriceSpecification",
+						"price": "350",
+						"priceCurrency": "EUR",
+						"referenceQuantity": {
+						  "@type": "QuantitativeValue",
+						  "value": "0.5",
+						  "unitCode": "DAY"
+						},
+						"additionalType":"Matériel, déplacement inclus"
+					  }
+				},
+				{
+					"@type":"Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Retouches",
+						"description":"Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications"
+					  },
+					  "priceSpecification": {
+						"@type": "UnitPriceSpecification",
+						"price": "50",
+						"priceCurrency": "EUR",
+						"referenceQuantity": {
+						  "@type": "QuantitativeValue",
+						  "value": "1",
+						  "unitText": "photo"
+						},
+						"additionalType":"2 AR par photo"
+					  }
+				},
+				{
+					"@type":"Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Album photos",
+						"description":"Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé" 
+					  },
+					  "priceSpecification": {
+						"@type": "UnitPriceSpecification",
+						"price": "400",
+						"priceCurrency": "EUR",
+						"referenceQuantity": {
+						  "@type": "QuantitativeValue",
+						  "value": "1",
+						  "unitText": "album A4"
+						},
+						"additionalType":"30 pages recto/verso"
+					  }
+				}
+			]
+		  }
+		}
+	</script>
+
 	<style>
 		:root {
 			--bs-blue: #0d6efd;
@@ -1384,9 +1472,11 @@
 	</style>
 
 </head>
-<body itemscope itemtype="https://schema.org/Photograph">
+<body>
+
+
 <nav class="top-header">
-	<h1 class="name h3" itemprop="creator">Nina Carducci</h1>
+	<h1 class="name h3">Nina Carducci</h1>
 	<div class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
@@ -1436,8 +1526,8 @@
 		<div id="about-me">
 			<h1 class="about-me__title">A propos de moi</h1>
 			<article>
-				<p class="h6 about-me__introduction titre_aboutme" itemprop="description">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-				<p itemprop="description">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+				<p class="h6 about-me__introduction titre_aboutme">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</article>
 		</div>
@@ -1446,8 +1536,10 @@
 		<h1 class="title h3">Portfolio</h1>
 		<div class="container py-3">
 			<div class="gallery" style="display: none;">
-				<img data-gallery-tag="Concert" width="440" height="440" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="photo artistique de spectateurs pendant un concert"/>
+				<img data-gallery-tag="Concert" width="440" height="440" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="photo artistique de spectateurs pendant un concert" />
+				
 				<img data-gallery-tag="Entreprises" width="440" height="440" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photo artistique d'un portrait d'un homme en costume"/>
+			
 				<img data-gallery-tag="Entreprises" width="440" height="440" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photo artistique d'un portrait d'une femme souriante"/>
 				<img data-gallery-tag="Mariages" width="440" height="440" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="photo artistique de mains"/>
 				<img data-gallery-tag="Portrait" width="440" height="440" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="photo artistique d'un portrait d'un homme fermant les yeux"/>
@@ -1466,13 +1558,13 @@
 			</figure>
 		</div>
 	</section>
-	<section id="services" itemscope itemtype="https://schema.org/Service">
+	<section id="services">
 		<h1 class="title h2">Mes services</h1>
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
-					<h2 itemprop="name">Shooting photo</h2>
-					<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+					<h2>Shooting photo</h2>
+					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
 					<h3>350€/demi journée</h3>
@@ -1482,8 +1574,8 @@
 			</div>
 			<div class="service">
 				<div class="service__description">
-					<h2 itemprop="name">Retouches</h2>
-					<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+					<h2 >Retouches</h2>
+					<p >Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
 				<div class="service__price">
 					<h3>50€/photo</h3>
@@ -1492,8 +1584,8 @@
 			</div>
 			<div class="service">
 				<div class="service__description">
-					<h2 itemprop="name">Album photos</h2>
-					<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+					<h2 >Album photos</h2>
+					<p >Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 				</div>
 				<div class="service__price">
 					<h3>400€ album A4</h3>
@@ -1531,7 +1623,9 @@
 				<img width="418" height="418" src="./assets/images/camera.webp" name="camera" alt="camera">
 			</div>
 		</div>
+		<p class="text-center mt-3" style="font-size: 10px; ">Nina Carducci - 68 Avenue Alsace Lorraine - 33200 Bordeaux</p>
 	</div>
+
 </aside>
 <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
