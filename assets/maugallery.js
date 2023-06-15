@@ -199,7 +199,7 @@
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
-      }" tabindex="-1" role="dialog" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+      }" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -208,7 +208,7 @@
                               ? '<button class="carousel-control-prev mg-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>'
                               : '<span style="display:block;" />'
                             }
-                            <img class="lightboxImage img-fluid" />
+                            <img class="lightboxImage img-fluid" alt=""/>
                             ${
                               navigation
                               ? '<button class="carousel-control-next mg-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>'
